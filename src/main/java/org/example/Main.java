@@ -1,17 +1,38 @@
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+public class Main {
+
+    public static void main(String[] args) {
+        //Task1        String str = "Hello";
+        //        System.out.println("Reversed: " + Task1.reverseString(str));
+        //
+        //        String palindromeStr = "anna";
+        //        System.out.println("Is palindrome: " + Task1.isPalindrome(palindromeStr));
+        //        System.out.println("Is NOT palindrome: " + Task1.isPalindrome("qwsdxcb"));
+        //
+        //        int n = 5;
+        //        int[] primes = Task1.generatePrimes(n);
+        //        System.out.print("First " + n + " prime numbers: ");
+        //        for (int prime : primes) {
+        //            System.out.print(prime + " ");
+        //        }
+
+
+        //Task3
+        int[] numbers = {5, 2, 9, 1, 5, 6};
+
+        System.out.println("Original array:");
+        for (int number : numbers) {
+            System.out.print(number + " ");
         }
+
+        Task3.bubbleSort(numbers);
+
+        System.out.println("\nSorted array:");
+        for (int number : numbers) {
+            System.out.print(number + " ");
+        }
+
     }
 }
